@@ -1,13 +1,27 @@
 from application import app
 from application import db
 from application.models import Playlist, Songs
+from flask import redirect, url_for, render_template, request
 
 
-
-@app.route('/')
+@app.route('/db')
 def dbcon():
     todo = 'Connected'
     return todo
+
+@app.route('/')
+@app.route('/home')
+def home():
+    intro = "Welcome to My-Spotify, please select from the options below"
+    #hyperlink to songs db or pls
+    return intro
+
+#shows all the songs in the db
+@app.route('/songs')
+def songs():
+    all_songs = Songs.query.all()
+    return render_template('songs.html', songslist=all_songs)
+
 
 @app.route('/read')
 def read():
