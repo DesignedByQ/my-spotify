@@ -26,3 +26,13 @@ class UpdateForm(FlaskForm):
     olength = StringField('Old Length', validators=[DataRequired()])
     nlength = StringField('New Length', validators=[DataRequired()])
     submit1 = SubmitField('Update Song')
+
+class PlayForm(FlaskForm):
+    nsg_title = StringField('Song Title', validators=[DataRequired()])
+    npl_name = StringField('Playlist Name', validators=[DataRequired()])
+    submit2 = SubmitField('Add To Playlist')
+
+class FilterForm(FlaskForm):
+    pl_name = StringField('Playlist Name', validators=[DataRequired()])
+    submit3 = SubmitField('Search Playlists')
+    
