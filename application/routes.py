@@ -4,12 +4,13 @@ from application.models import Playlist, Songs
 from flask import redirect, url_for, render_template, request
 from application.forms import SongForm, UpdateForm, PlayForm, FilterForm
 
-
+'''#check db is connected 
 @app.route('/db')
 def dbcon():
     todo = 'Connected'
-    return todo
+    return todo'''
 
+#welcome page
 @app.route('/')
 @app.route('/home')
 def home():
@@ -95,13 +96,12 @@ def playlists():
 
 @app.route('/playlists', methods=['GET', 'POST'])
 def playlists():
-
+    
     form = FilterForm()
 
     search = form.pl_name.data      
 
-    '''if form.validate_on_submit():
-        searched = form.pl_name.data'''
+    news = str(search)
     
     all_pl = Playlist.query.all()
 
@@ -109,13 +109,13 @@ def playlists():
     for pl in all_pl:
         pl_string += pl.pl_name
     
-    if search not in pl_string:
-        return "Please select from an available playlist"
-    else:
-        filtered_pl = Playlist.query.filter_by(pl_name=search) 
-     
-    return render_template('playlists.html', form=form, playlists=filtered_pl)
-
+    if news in pl_string:
+        filtered_pl = Playlist.query.filter_by(pl_name=search)
+        return render_template('playlists.html', form=form, playlists=filtered_pl)
+    elif news not in pl_string:
+        message = "Please select from an available playlist!!!"
+        return render_template('playlists.html', form=form, message=message)
+            
 @app.route('/allplaylists', methods=['GET', 'POST'])
 def allplaylists():
 
@@ -130,6 +130,7 @@ def add_pl():
     form = PlayForm()
 
     if request.method == 'POST':
+        nsgnum = form.nsg_num.data
         nsgtitle = form.nsg_title.data
         nplname = form.npl_name.data
         count = Playlist.query.count()
@@ -143,7 +144,7 @@ def add_pl():
         #print(sg_string)
         if nsgtitle in sg_string:
             
-            new_song = Playlist(sg_title=nsgtitle, pl_name=nplname)
+            new_song = Playlist(sg_num=nsgnum, sg_title=nsgtitle, pl_name=nplname)
             db.session.add(new_song)
             db.session.commit()
         else:
@@ -152,10 +153,5 @@ def add_pl():
     return render_template('add_pl.html', form=form, message=message)
 
 
-@app.route('/filter')
-def filter():
 
-    pl = str(Playlist.query.filter_by(pl_name='Pop Music'))
-
-    return pl
 

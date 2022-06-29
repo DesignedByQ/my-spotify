@@ -28,6 +28,7 @@ class UpdateForm(FlaskForm):
     submit1 = SubmitField('Update Song')
 
 class PlayForm(FlaskForm):
+    nsg_num = IntegerField('Song ID', validators=[DataRequired()])
     nsg_title = StringField('Song Title', validators=[DataRequired()])
     npl_name = StringField('Playlist Name', validators=[DataRequired()])
     submit2 = SubmitField('Add To Playlist')

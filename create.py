@@ -12,11 +12,11 @@ db.session.add(sample_song)
 db.session.add(sample_song1)
 db.session.commit()
 
-sample_playlist = Playlist(songsfk = sample_song, pl_name = 'Pop Music', count = 0)
+sample_playlist = Playlist(sg_num = 1, sg_title = 'Billie Jean', pl_name = 'Pop Music', count = 0)
 
-sample_playlist1 = Playlist(songsfk = Songs.query.filter_by(title='Thriller', artist='Micheal Jackson').first(), pl_name = 'Pop Music', count = 0)
+#sample_playlist1 = Playlist(songsfk = Songs.query.filter_by(title='Thriller', artist='Micheal Jackson').first(), pl_name = 'Pop Music', count = 0)
 
 db.session.add(sample_playlist)
-db.session.add(sample_playlist1)
+#db.session.add(sample_playlist1)
 db.session.commit()
 
