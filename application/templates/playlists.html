@@ -1,0 +1,39 @@
+{% extends "navbar.html" %}
+{% block body %}
+<br>
+
+<h1>Playlist Database</h1>
+
+<br>
+
+<form action="{{ url_for('add_pl') }}">
+<button type="Submit">Add Song To Playlist</button>
+</form>
+
+<br>
+
+<form action="{{ url_for('allplaylists') }}">
+<button type="Submit">View All Playlist</button>
+</form>
+
+<br>
+
+<div class='form'>
+    <form method='POST' action=''>
+        {{ form.hidden_tag() }}
+        {{ form.pl_name.label }} {{ form.pl_name }} {{ form.submit3 }}
+        <br>
+        
+        <br>
+    </form>
+</div>
+
+<br>
+
+{% for i in playlists %}
+<p>Playlist ID: {{ i.id}} / Title: {{ i.sg_title }} / Playlist Name: {{ i.pl_name }} / Songs in playlist: {{ i.count }}</p>
+
+<br>
+    
+{% endfor %}
+{% endblock body %}

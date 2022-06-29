@@ -2,9 +2,10 @@ from application import db
 
 class Playlist(db.Model):
     id = db.Column(db.Integer, primary_key=True)
-    title = db.Column(db.String(30), nullable=False)
+    sg_title = db.Column(db.String(30), db.ForeignKey('songs.title'), nullable=False)
+    pl_name = db.Column(db.String(30), nullable=False)
     count = db.Column(db.Integer, default=0, nullable=False)
-    songs = db.relationship('Songs', backref='playlistfk')
+    #songs = db.relationship('Songs', backref='playlistfk')
 
 class Songs(db.Model):
     id = db.Column(db.Integer, primary_key=True)
@@ -14,7 +15,8 @@ class Songs(db.Model):
     category = db.Column(db.String(30), nullable=False)
     reldate = db.Column('Date', db.String(30), nullable=False)
     length = db.Column(db.String(30), nullable=False)
-    playlist_title = db.Column(db.String, db.ForeignKey('playlist.title'), nullable=False)
+    #playlist_title = db.Column(db.String, db.ForeignKey('playlist.title'), nullable=False)
+    playlist = db.relationship('Playlist', backref='songsfk')
     
 '''class Albums(db.Model):
     id = db.Column(db.Integer, primary_key=True)
