@@ -51,7 +51,7 @@ class TestBase(LiveServerTestCase):
 
         self.assertEqual(response.code, 200)'''
 
-# Write a test class to test Read functionality
+'''# Write a test class to test Read functionality
 
 class TestViews(TestBase):
     def test_filter_pl(self):
@@ -62,7 +62,7 @@ class TestViews(TestBase):
         
         self.driver.find_element_by_xpath('//*[@id="submit"]').click()
 
-        assert self.driver.current_url == 'http://35.189.93.228:5000/playlists'
+        assert self.driver.current_url == 'http://35.189.93.228:5000/playlists'''
 
     '''def test_empty_validation(self):
         self.submit_input('')
