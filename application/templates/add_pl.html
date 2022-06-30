@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>Add Song To Playlist Form</title>
+    </head>
+    <body>
+        {% extends "navbar.html" %}
+        {% block body %}
+        <br>
+        
+        <div class='form'>
+            <form method='POST' action=''>
+                {{ form.hidden_tag() }}
+                {{ form.nsg_num.label }} {{ form.nsg_num }}
+                <br>
+                {{ form.nsg_title.label }} {{ form.nsg_title }}
+                <br>
+                {{ form.npl_name.label }} {{ form.npl_name }}
+                <br>
+                {{ form.submit2 }}
+                <br>
+            {{ message }}
+            </form>
+        </div>
+
+        {% endblock body %}
+    </body>
+</html>

@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>Add Song Form</title>
+    </head>
+    <body>
+        {% extends "navbar.html" %}
+        {% block body %}
+        <br>
+        
+        <div class='form'>
+            <form method='POST' action=''>
+                {{ form.hidden_tag() }}
+                {{ form.ntitle.label }} {{ form.ntitle }}
+                <br>
+                {{ form.nartist.label }} {{ form.nartist }}
+                <br>
+                {{ form.nfeature.label }} {{ form.nfeature }}
+                <br>
+                {{ form.ncategory.label }} {{ form.ncategory }}
+                <br>
+                {{ form.nreldate.label }} {{ form.nreldate }}
+                <br>
+                {{ form.nlength.label }} {{ form.nlength }}
+                <br>
+                {{ form.submit }}
+                <br>
+            {{ message }}
+            </form>
+        </div>
+
+        {% endblock body %}
+    </body>
+</html>
