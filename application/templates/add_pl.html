@@ -10,6 +10,8 @@
         <div class='form'>
             <form method='POST' action=''>
                 {{ form.hidden_tag() }}
+                {{ form.nsg_num.label }} {{ form.nsg_num }}
+                <br>
                 {{ form.nsg_title.label }} {{ form.nsg_title }}
                 <br>
                 {{ form.npl_name.label }} {{ form.npl_name }}

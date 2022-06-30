@@ -23,15 +23,17 @@
         {{ form.hidden_tag() }}
         {{ form.pl_name.label }} {{ form.pl_name }} {{ form.submit3 }}
         <br>
-        
-        <br>
     </form>
 </div>
 
 <br>
 
+{% if form.pl_name %}
+<p>{{ message }}</p>
+{% endif %}
+
 {% for i in playlists %}
-<p>Playlist ID: {{ i.id}} / Title: {{ i.sg_title }} / Playlist Name: {{ i.pl_name }} / Songs in playlist: {{ i.count }}</p>
+<p>Playlist ID: {{ i.id}} / Song ID: {{ i.sg_num }} / Title: {{ i.sg_title }} / Playlist Name: {{ i.pl_name }} / Songs in playlist: {{ i.count }}</p>
 
 <br>
     
