@@ -2,10 +2,10 @@ from selenium import webdriver
 from flask_testing import LiveServerTestCase
 from application import app, db
 from application.models import Songs, Playlist
-import chromedriver_autoinstaller
+#import chromedriver_autoinstaller
 
 
-chromedriver_autoinstaller.install()
+#chromedriver_autoinstaller.install()
 
 
 # Create the base class
