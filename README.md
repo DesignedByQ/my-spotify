@@ -120,6 +120,13 @@ I used pytest for my unit testing. I set out to test all the routes in my applic
 
 This application has been built as an MVP so has a very basic look built using HTML & Jinga2 syntax to access the back-end functions written with python.
 
+Instructions for deploying the app:
+
+- Clone down the repo, cd into the project folder and execute the following commands.
+- sudo cp /home/jenkins/.jenkins/workspace/my-spotify-app/flaskapp.service /etc/systemd/system/flaskapp.service
+- sudo systemctl daemon-reload
+- sudo systemctl start flaskapp.service
+
 9.1 Below is the front page, here the user will navigate to the main database to add songs and make available for adding them to a playlist.
 
 ![image](https://user-images.githubusercontent.com/32695213/176925478-9d7eb902-e689-4bc5-a0e0-989af9ac2912.png)
