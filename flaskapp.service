@@ -4,7 +4,7 @@ Description=my-spotify-app
 [Service]
 User=jenkins
 WorkingDirectory=/home/jenkins/.jenkins/workspace/my-spotify-app
-Environment=DATABASE_URI="mysql+pymysql://root:root@35.230.129.184:3306/my-spotify-db1"
+Environment=DATABASE_URI="mysql+pymysql://root:root@35.230.129.184:3306/my-spotify-db"
 Environment=YOUR_SECRET_KEY="mister11"
 ExecStart=/bin/sh \
     -c 'python3 -m venv venv &&\
