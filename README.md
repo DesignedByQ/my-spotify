@@ -19,13 +19,13 @@ ACKNOWLEDGEMENTS
 LICENSES
 
 
-**RESOURCES **
+**1. RESOURCES **
 
 Jira: https://henryo.atlassian.net/jira/software/projects/PCA/boards/3?selectedIssue=PCA-46
 
 Website: [IP Address](http://35.197.238.79:5000/)
 
-**BRIEF**
+**2. BRIEF**
 
 Overall objective with this project is the following:
 
@@ -37,35 +37,35 @@ ADDITIONAL REQUIREMENTS
 
 The requirements of the project are as follows:
 
-1.  A Trello board (or equivalent Kanban board tech) with full expansion
+1). A Trello board (or equivalent Kanban board tech) with full expansion
     on user stories, use cases and tasks needed to complete the project.
     It could also provide a record of any issues or risks that you faced
     creating your project.
     
-2.  A relational database used to store data persistently for the
+2). A relational database used to store data persistently for the
     project, this database needs to have at least 2 tables in it, to
     demonstrate your understanding, you are also required to model a
     relationship.
     
-3.  Clear Documentation from a design phase describing the architecture
+3). Clear Documentation from a design phase describing the architecture
     you will use for you project as well as a detailed Risk Assessment.
 
-4.  A functional CRUD application created in Python, following best
+4). A functional CRUD application created in Python, following best
     practices and design principles, that meets the requirements set on
     your Kanban Board.
 
-5.  Fully designed test suites for the application you are creating, as
+5). Fully designed test suites for the application you are creating, as
     well as automated tests for validation of the application. You must
     provide high test coverage in your backend and provide consistent
     reports and evidence to support a TDD approach.
     
-6.  A functioning front-end website and integrated API's, using Flask.
+6). A functioning front-end website and integrated API's, using Flask.
     
-7.  Code fully integrated into a Version Control System using the
+7). Code fully integrated into a Version Control System using the
     Feature-Branch model which will subsequently be built through a CI
     server and deployed to a cloud-based virtual machine.
     
-**MY APPROACH**
+**3. MY APPROACH**
 
 Music Database with Playlist Feature
 
@@ -78,13 +78,13 @@ Users can create multiple playlists.
 
 Requires two db to start
 
-**MY RISK ASSESSMENT**
+**4. MY RISK ASSESSMENT**
 
 https://docs.google.com/document/d/1iqoWZ6W-6CRM-1ywy6ZZsdNVc5jbR1Qg_qtf30a_Uvs/edit?usp=sharing
 
 ![image](https://user-images.githubusercontent.com/32695213/176883529-041cad71-2835-4fd1-aab8-eab934292ddb.png)
 
-**JIRA**
+**5. JIRA**
 
 I decided to use Jira for my project tracking software. By using it I was able to breakdown the requirements of the project in smaller manageable tasks. Jira has features that allowed me to deploy the MoSCoW method with my project tracking a define which tasks would also be the hardest to complete. The must-have tasks were completed first while the features that would slightly improve functionality were left to the end of the project labeled as could-have and spent most of their time in the backlog.
 
@@ -92,7 +92,7 @@ I decided to use Jira for my project tracking software. By using it I was able t
 
 ![image](https://user-images.githubusercontent.com/32695213/176886011-8e093d88-525b-4dd9-b42e-9b17e4744061.png)
 
-**ENTITY RELATIONSHIP DIAGRAM**
+**6. ENTITY RELATIONSHIP DIAGRAM**
 
 My inittial thinking behind my first diagram was that each song will belong to only one album and an album can have many songs. Also a song can belong to many playlists and a playlist will have many songs. See below for proposed many-to-many ERD:
 
@@ -100,39 +100,39 @@ My inittial thinking behind my first diagram was that each song will belong to o
 
 After considering the amount of work it would take to implement the the above ERD and the limited time I had for the project I decided to go for something more simple like the two table one-to-many version shown below. With this diagram I only needed a table for songs which would serve as a main database and then a second table for playlists which songs can be added to with the additional criteria of 'playlist name'. This way the user could filter the songs in the playlist table to access a specific playlist or all playlists.
 
-**TECHNOLOGY USED & CICD PIPELINE**
+**7. TECHNOLOGY USED & CICD PIPELINE**
 
 I used develpoment software such as python3 and the flask framework to build the application on a virtual machine hosted on google cloud platform. The source code was also pushed up to Github for version control as well as living on the VM. I would use Jira to create and schedule my development tasks and app features that were required to push them up to github on seperate branches as I went along. I also required the application to auto deploy and test everytime there was an alteration to the code and for this I used jenkins. The webhook feature on jenkins allowed me to setup the pipeline so everytime I pushed up to github the application would rebuild which included a full test with coverage report and deployment.
 
-![image](https://user-images.githubusercontent.com/32695213/176912558-c7d2f3f0-cf69-4b53-81ae-ca7bd2beb7a8.png)
+![image](https://user-images.githubusercontent.com/32695213/176937145-88004747-3942-4f0b-afb1-3f60dd9ba615.png)
 
-**TESTING**
+**8. TESTING**
 
 I used pytest for my unit testing. I set out to test all the routes in my application however, I was unable to configue the integration tests. As it stands my tests pass at a rate of 72% and these tests were designed to check the end points of the of the routes and the CRUD functions run as expected. Below is a screenshot of my testing coverage report:
 
 ![image](https://user-images.githubusercontent.com/32695213/176922854-67620506-0ab7-42fc-8ab2-292c640581a7.png)
 
-**HOW TO USE THE APP**
+**9. HOW TO USE THE APP**
 
 This application has been built as an MVP so has a very basic look built using HTML & Jinga2 syntax to access the back-end functions written with python.
 
-Below is the front page, here the user will navigate to the main database to add songs and make available for adding them to a playlist.
+9.1 Below is the front page, here the user will navigate to the main database to add songs and make available for adding them to a playlist.
 
 ![image](https://user-images.githubusercontent.com/32695213/176925478-9d7eb902-e689-4bc5-a0e0-989af9ac2912.png)
 
-When you click through to the next page you can add a song of your choice and scroll down the page to see all available songs in the database.
+9.2 When you click through to the next page you can add a song of your choice and scroll down the page to see all available songs in the database.
 
 ![image](https://user-images.githubusercontent.com/32695213/176925877-3ed84ad8-fda2-40c8-88aa-6b2778afd1f6.png)
 
 ![image](https://user-images.githubusercontent.com/32695213/176926368-6333e70d-5fa2-4247-b7a6-0ae04e236b57.png)
 
-Now you can go to the playlist section and add any song that exists in the songs database to a playlist of your choice.
+9.3 Now you can go to the playlist section and add any song that exists in the songs database to a playlist of your choice.
 
 ![image](https://user-images.githubusercontent.com/32695213/176926642-d17889c8-1ea6-4c02-a6bf-667c7ac81ddc.png)
 
 ![image](https://user-images.githubusercontent.com/32695213/176927194-8b918886-0776-44bd-9c6d-b6c081cd5ec9.png)
 
-The user can either view all playlists or filter by a specific playlist.
+9.4 The user can either view all playlists or filter by a specific playlist.
 
 ![image](https://user-images.githubusercontent.com/32695213/176927464-976f2b60-d50e-4e6b-a441-9128d25101cf.png)
 
@@ -146,7 +146,21 @@ The user can either view all playlists or filter by a specific playlist.
 
 10.4 The DB connection to GCP has been exported using pymysql however, the gcp open shell doesn't show the tables etc.
 
-**11. FUTURE IMPROVMENTS**
+**11. FUTURE IMPROVEMENTS**
+
+If I had more time I would make the following improvements:
+
+11.1 Improve testing coverage.
+
+11.2 Add a button to the songs db that will directly add it to a playlist.
+
+11.3 Use CSS to improve the appearance of the application.
+
+11.4 Add more functionality by incorporating more buttons and links thus improving the UI/UX aspect.
+
+11.5 Use a drop down multi choice feature to select from multiple playlist options.
+
+11.6 Setup user accounts for logins/password features.
 
 
 
