@@ -1,4 +1,4 @@
-from selenium import webdriver
+'''from selenium import webdriver
 from flask_testing import LiveServerTestCase
 from application import app, db
 from application.models import Songs, Playlist
@@ -44,7 +44,7 @@ class TestBase(LiveServerTestCase):
         db.drop_all()
         
 
-    ''''def test_server_is_up_and_running(self):
+    def test_server_is_up_and_running(self):
 
         self.driver.get(f'http://35.189.93.228:5000')
         response = urlopen(f'http://35.189.93.228:5000')
