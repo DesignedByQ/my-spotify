@@ -4,7 +4,7 @@ Second QA Project
 
 **CONTENTS**
 
-[RESOURCES](https://github.com/DesignedByQ/my-spotify/edit/main/README.md)
+[RESOURCES]([RESOURCES](https://github.com/DesignedByQ/my-spotify/edit/main/README.md))
 1. RESOURCES
 2. BRIEF & ADDITIONAL REQUIREMENTS
 3. MY APPROACH 
@@ -109,7 +109,7 @@ I used develpoment software such as python3 and the flask framework to build the
 
 ![image](https://user-images.githubusercontent.com/32695213/176937145-88004747-3942-4f0b-afb1-3f60dd9ba615.png)
 
-**8. TESTING**
+**8. TESTING**[RESOURCES]([RESOURCES](https://github.com/DesignedByQ/my-spotify/edit/main/README.md))
 
 I used pytest for my unit testing. I set out to test all the routes in my application however, I was unable to configue the integration tests. As it stands my tests pass at a rate of 72% and these tests were designed to check the end points of the of the routes and the CRUD functions run as expected. Below is a screenshot of my testing coverage report:
 
