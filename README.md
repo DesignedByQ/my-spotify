@@ -4,7 +4,7 @@ Second QA Project
 
 **CONTENTS**
 
-[RESOURCES](#resources)
+[RESOURCES](#RESOURCES)
 1. RESOURCES
 2. BRIEF & ADDITIONAL REQUIREMENTS
 3. MY APPROACH 
@@ -108,7 +108,8 @@ After considering the amount of work it would take to implement the the above ER
 I used develpoment software such as python3 and the flask framework to build the application on a virtual machine hosted on google cloud platform. The source code was also pushed up to Github for version control as well as living on the VM. I would use Jira to create and schedule my development tasks and app features that were required to push them up to github on seperate branches as I went along. I also required the application to auto deploy and test everytime there was an alteration to the code and for this I used jenkins. The webhook feature on jenkins allowed me to setup the pipeline so everytime I pushed up to github the application would rebuild which included a full test with coverage report and deployment.
 
 ![image](https://user-images.githubusercontent.com/32695213/176937145-88004747-3942-4f0b-afb1-3f60dd9ba615.png)
-###Resources
+###RESOURCES
+
 **8. TESTING** 
 
 I used pytest for my unit testing. I set out to test all the routes in my application however, I was unable to configue the integration tests. As it stands my tests pass at a rate of 72% and these tests were designed to check the end points of the of the routes and the CRUD functions run as expected. Below is a screenshot of my testing coverage report:
