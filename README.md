@@ -4,6 +4,7 @@ Second QA Project
 
 **CONTENTS**
 
+[RESOURCES](https://github.com/DesignedByQ/my-spotify/edit/main/README.md)
 1. RESOURCES
 2. BRIEF & ADDITIONAL REQUIREMENTS
 3. MY APPROACH 
