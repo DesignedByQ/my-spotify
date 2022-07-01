@@ -22,6 +22,7 @@ LICENSES
 **RESOURCES **
 
 Jira: https://henryo.atlassian.net/jira/software/projects/PCA/boards/3?selectedIssue=PCA-46
+
 Website: [IP Address](http://35.197.238.79:5000/)
 
 **BRIEF**
@@ -91,4 +92,11 @@ I decided to use Jira for my project tracking software. By using it I was able t
 
 ![image](https://user-images.githubusercontent.com/32695213/176886011-8e093d88-525b-4dd9-b42e-9b17e4744061.png)
 
-**
+**ENTITY RELATIONSHIP DIAGRAM**
+
+My inittial thinking behind my first diagram was that each song will belong to only one album and an album can have many songs. Also a song can belong to many playlists and a playlist will have many songs. See below for proposed ERD:
+
+![image](https://user-images.githubusercontent.com/32695213/176886960-212c054a-1301-4bf4-b669-12ed3b37bf28.png)
+
+After considering the amount of work it would take to implement the the above ERD and the limited time I had for the project I decided to go for something more simple like the two table version shown below. With this diagram I only needed a table for songs which would serve as a main database and then a second table for playlists which songs can be added to with the additional criteria of 'playlist name'. This way the user could filter the songs in the playlist table to access a specific playlist or all playlists.
+
