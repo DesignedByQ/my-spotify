@@ -5,7 +5,7 @@ Second QA Project
 **CONTENTS**
 
 1. [RESOURCES](#RESOURCES)
-2. [BRIEF & ADDITIONAL REQUIREMENTS](#BRIEF-&-ADDITIONAL-REQUIREMENTS)
+2. [BRIEF & ADDITIONAL REQUIREMENTS](#BRIEF)
 3. [MY APPROACH](#MY APPROACH)
 4. [RISK ASSESSMENT](#RISK ASSESSMENT)
 5. [JIRA](#JIRA)
@@ -27,7 +27,7 @@ Website: [IP Address](http://35.197.238.79:5000/)
 
 GitHub: https://github.com/DesignedByQ/my-spotify
 
-### BRIEF & ADDITIONAL REQUIREMENTS
+### BRIEF
 
 Overall objective with this project is the following:
 
