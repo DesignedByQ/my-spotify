@@ -10,7 +10,7 @@ Second QA Project
 4. [RISK ASSESSMENT](#RISK-ASSESSMENT)
 5. [JIRA BREAKDOWN](#JIRA)
 6. [ERD](#ENTITY-RELATIONSHIP-DIAGRAM)
-7. [TECH USED & CICD PIPELINE](#TECHNOLOGY-USED-&-CICD-PIPELINE)
+7. [TECH USED & CICD PIPELINE](#TECHNOLOGY)
 8. [TESTING](#TESTING)
 9. [HOW TO USE THE APP](#HOW-TO-USE-THE-APP)
 10. [KNOWN ISSUES](#KNOWN-ISSUES)
@@ -102,7 +102,7 @@ My inittial thinking behind my first diagram was that each song will belong to o
 
 After considering the amount of work it would take to implement the the above ERD and the limited time I had for the project I decided to go for something more simple like the two table one-to-many version shown below. With this diagram I only needed a table for songs which would serve as a main database and then a second table for playlists which songs can be added to with the additional criteria of 'playlist name'. This way the user could filter the songs in the playlist table to access a specific playlist or all playlists.
 
-### TECHNOLOGY USED & CICD PIPELINE
+### TECHNOLOGY
 
 I used develpoment software such as python3 and the flask framework to build the application on a virtual machine hosted on google cloud platform. The source code was also pushed up to Github for version control as well as living on the VM. I would use Jira to create and schedule my development tasks and app features that were required to push them up to github on seperate branches as I went along. I also required the application to auto deploy and test everytime there was an alteration to the code and for this I used jenkins. The webhook feature on jenkins allowed me to setup the pipeline so everytime I pushed up to github the application would rebuild which included a full test with coverage report and deployment.
 
