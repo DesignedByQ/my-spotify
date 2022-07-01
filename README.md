@@ -80,7 +80,7 @@ Users can create multiple playlists.
 
 Requires two db to start
 
-### MY RISK ASSESSMENT
+### RISK ASSESSMENT
 
 https://docs.google.com/document/d/1iqoWZ6W-6CRM-1ywy6ZZsdNVc5jbR1Qg_qtf30a_Uvs/edit?usp=sharing
 
