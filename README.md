@@ -9,7 +9,7 @@ CONTENTS
 4. RISK ASSESSMENT
 5. JIRA BREAKDOWN
 6. ERD
-TECH USED & CICD PIPELINE
+7. TECH USED & CICD PIPELINE
 TESTINGS - with screen shots of coverage
 HOW TO USE THE APP
 KNOWN ISSUES
@@ -100,4 +100,7 @@ My inittial thinking behind my first diagram was that each song will belong to o
 
 After considering the amount of work it would take to implement the the above ERD and the limited time I had for the project I decided to go for something more simple like the two table version shown below. With this diagram I only needed a table for songs which would serve as a main database and then a second table for playlists which songs can be added to with the additional criteria of 'playlist name'. This way the user could filter the songs in the playlist table to access a specific playlist or all playlists.
 
+**TECHNOLOGY USED & CICD PIPELINE**
+
+![image](https://user-images.githubusercontent.com/32695213/176912558-c7d2f3f0-cf69-4b53-81ae-ca7bd2beb7a8.png)
 
