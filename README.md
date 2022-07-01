@@ -168,7 +168,7 @@ If I had more time I would make the following improvements:
 
 ### CONTRIBUTORS
 
-Henry Opara
+Henry Opara - Cloud Developer
 
 GitHub: https://github.com/DesignedByQ
 
