@@ -109,7 +109,7 @@ I used develpoment software such as python3 and the flask framework to build the
 
 ![image](https://user-images.githubusercontent.com/32695213/176937145-88004747-3942-4f0b-afb1-3f60dd9ba615.png)
 
-***RESOURCES
+### RESOURCES
 
 **8. TESTING** 
 
