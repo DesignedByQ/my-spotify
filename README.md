@@ -8,7 +8,7 @@ Second QA Project
 2. [BRIEF & ADDITIONAL REQUIREMENTS](#BRIEF & ADDITIONAL REQUIREMENTS)
 3. [MY APPROACH](#MY APPROACH)
 4. [RISK ASSESSMENT](#RISK ASSESSMENT)
-5. [JIRA BREAKDOWN](#JIRA BREAKDOWN)
+5. [JIRA](#JIRA)
 6. [ERD](#ERD)
 7. [TECH USED & CICD PIPELINE](#TECH USED & CICD PIPELINE)
 8. [TESTING](#TESTING)
@@ -86,7 +86,7 @@ https://docs.google.com/document/d/1iqoWZ6W-6CRM-1ywy6ZZsdNVc5jbR1Qg_qtf30a_Uvs/
 
 ![image](https://user-images.githubusercontent.com/32695213/176883529-041cad71-2835-4fd1-aab8-eab934292ddb.png)
 
-### **5. JIRA**
+### JIRA
 
 I decided to use Jira for my project tracking software. By using it I was able to breakdown the requirements of the project in smaller manageable tasks. Jira has features that allowed me to deploy the MoSCoW method with my project tracking a define which tasks would also be the hardest to complete. The must-have tasks were completed first while the features that would slightly improve functionality were left to the end of the project labeled as could-have and spent most of their time in the backlog.
 
