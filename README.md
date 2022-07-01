@@ -12,8 +12,8 @@ CONTENTS
 7. TECH USED & CICD PIPELINE
 8. TESTING
 9. HOW TO USE THE APP
-KNOWN ISSUES
-FUTURE IMPROVEMENTS
+10. KNOWN ISSUES
+11. FUTURE IMPROVEMENTS
 CONTRIBUTORS
 ACKNOWLEDGEMENTS
 LICENSES
@@ -135,6 +135,18 @@ Now you can go to the playlist section and add any song that exists in the songs
 The user can either view all playlists or filter by a specific playlist.
 
 ![image](https://user-images.githubusercontent.com/32695213/176927464-976f2b60-d50e-4e6b-a441-9128d25101cf.png)
+
+**10. KNOWN ISSUES**
+
+10.1 This error message "Please select from an available playlist!!!" is constant but I would only like it to show if the user enters a playlist name that doesn't exist.
+
+10.2 I couldn't get integration tests to work at all.
+
+10.3 Fix playlist count feature so it display number of songs in the playlist
+
+10.4 The DB connection to GCP has been exported using pymysql however, the gcp open shell doesn't show the tables etc.
+
+**11. FUTURE IMPROVMENTS**
 
 
 
