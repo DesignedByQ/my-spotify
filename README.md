@@ -4,7 +4,7 @@ Second QA Project
 
 **CONTENTS**
 
-[RESOURCES](*resources)
+[RESOURCES](#resources)
 1. RESOURCES
 2. BRIEF & ADDITIONAL REQUIREMENTS
 3. MY APPROACH 
