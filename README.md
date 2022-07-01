@@ -172,7 +172,7 @@ GitHub: https://github.com/DesignedByQ
 
 Linkedin: https://www.linkedin.com/in/henry-opara-81890a23/
 
-### ACKNOWLEDGMENTS
+### ACKNOWLEDGEMENTS
 
 I would like to say thanks to the following QA Training staff - Ryan Wright, Reece Elder, Adam Gray and Victoria Sacre.
 
@@ -180,7 +180,7 @@ Each of the above contributed in my development that has allowed me to build thi
 
 I would also like to give a mention to the following websites which on a numer of occasions helped me to debug and overcome coding issues w3schools.com, stackoverflow.com and qa-community.co.uk.
 
-### LICENCES
+### LICENSES
 
 The MIT License (MIT)
 
