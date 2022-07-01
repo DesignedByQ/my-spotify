@@ -2,7 +2,8 @@
 
 Second QA Project
 
-CONTENTS
+**CONTENTS**
+
 1. RESOURCES
 2. BRIEF & ADDITIONAL REQUIREMENTS
 3. MY APPROACH 
@@ -17,7 +18,6 @@ CONTENTS
 12. CONTRIBUTORS
 13. ACKNOWLEDGEMENTS
 14. LICENSES
-
 
 **1. RESOURCES **
 
@@ -168,15 +168,39 @@ If I had more time I would make the following improvements:
 
 Henry Opara
 
-GitHub: - https://github.com/DesignedByQ
+GitHub: https://github.com/DesignedByQ
 
 Linkedin: https://www.linkedin.com/in/henry-opara-81890a23/
 
 **13. ACKNOWLEDGMENTS**
 
+I would like to say thanks to the following QA Training staff - Ryan Wright, Reece Elder, Adam Gray and Victoria Sacre.
 
+Each of the above contributed in my development that has allowed me to build this application and use all the required technologies.
+
+I would also like to give a mention to the following websites which on a numer of occasions helped me to debug and overcome coding issues w3schools.com, stackoverflow.com and qa-community.co.uk.
 
 **14. LICENCES**
 
+The MIT License (MIT)
 
+Copyright (c) 2013-present Pagar.me Pagamentos S/A
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
 
