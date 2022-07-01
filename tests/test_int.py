@@ -1,11 +1,11 @@
-from selenium import webdriver
+'''from selenium import webdriver
 from flask_testing import LiveServerTestCase
 from application import app, db
 from application.models import Songs, Playlist
-import chromedriver_autoinstaller
+#import chromedriver_autoinstaller
 
 
-chromedriver_autoinstaller.install()
+#chromedriver_autoinstaller.install()
 
 
 # Create the base class
@@ -44,12 +44,12 @@ class TestBase(LiveServerTestCase):
         db.drop_all()
         
 
-    ''''def test_server_is_up_and_running(self):
+    def test_server_is_up_and_running(self):
 
         self.driver.get(f'http://35.189.93.228:5000')
         response = urlopen(f'http://35.189.93.228:5000')
 
-        self.assertEqual(response.code, 200)'''
+        self.assertEqual(response.code, 200)
 
 # Write a test class to test Read functionality
 
@@ -64,7 +64,7 @@ class TestViews(TestBase):
 
         assert self.driver.current_url == 'http://35.189.93.228:5000/playlists'
 
-    '''def test_empty_validation(self):
+    def test_empty_validation(self):
         self.submit_input('')
         self.assertIn(url_for('playlists'), self.driver.current_url)
 

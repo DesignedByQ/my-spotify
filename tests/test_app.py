@@ -58,10 +58,17 @@ class TestViews(TestBase):
             feature='nfeature',
             category='ncategory',
             reldate='nreldate',
-            length='nlength'
+            length='nlength',
+            otitle='title',
+            oartist='artist',
+            ofeature='feature',
+            ocategory='category',
+            oreldate='reldate',
+            olength='length'
         ), 
         follow_redirects=True)
         self.assertIn(b'ntitle', response.data)
+        self.assertIn(b'nartist', response.data)
 
     def test_view_songs(self):
         response = self.client.get(url_for('songs'))

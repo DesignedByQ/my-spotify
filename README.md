@@ -100,3 +100,4 @@ My inittial thinking behind my first diagram was that each song will belong to o
 
 After considering the amount of work it would take to implement the the above ERD and the limited time I had for the project I decided to go for something more simple like the two table version shown below. With this diagram I only needed a table for songs which would serve as a main database and then a second table for playlists which songs can be added to with the additional criteria of 'playlist name'. This way the user could filter the songs in the playlist table to access a specific playlist or all playlists.
 
+
