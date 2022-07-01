@@ -4,22 +4,22 @@ Second QA Project
 
 **CONTENTS**
 
-1. [RESOURCES](#1.-RESOURCES)
-2. [BRIEF & ADDITIONAL REQUIREMENTS](#2.-BRIEF)
-3. [MY APPROACH](#3.-MY-APPROACH)
-4. [RISK ASSESSMENT](#4.-RISK-ASSESSMENT)
-5. [JIRA BREAKDOWN](#5.-JIRA)
-6. [ERD](#6.-ERD)
-7. [TECH USED & CICD PIPELINE](#7.-TECH-USED-&-CICD-PIPELINE)
-8. [TESTING](#8.-TESTING)
-9. [HOW TO USE THE APP](#9.-HOW-TO-USE-THE-APP)
-10. [KNOWN ISSUES](#10.-KNOWN-ISSUES)
-11. [FUTURE IMPROVEMENTS](#11.-FUTURE-IMPROVEMENTS)
-12. [CONTRIBUTORS](#12.-CONTRIBUTORS)
-13. [ACKNOWLEDGEMENTS](#13.-ACKNOWLEDGEMENTS)
-14. [LICENSES](#14.-LICENSES)
+1. [RESOURCES](#RESOURCES)
+2. [BRIEF & ADDITIONAL REQUIREMENTS](#BRIEF)
+3. [MY APPROACH](#MY-APPROACH)
+4. [RISK ASSESSMENT](#RISK-ASSESSMENT)
+5. [JIRA BREAKDOWN](#JIRA)
+6. [ERD](#ERD)
+7. [TECH USED & CICD PIPELINE](#TECH-USED-&-CICD-PIPELINE)
+8. [TESTING](#TESTING)
+9. [HOW TO USE THE APP](#HOW-TO-USE-THE-APP)
+10. [KNOWN ISSUES](#KNOWN-ISSUES)
+11. [FUTURE IMPROVEMENTS](#FUTURE-IMPROVEMENTS)
+12. [CONTRIBUTORS](#CONTRIBUTORS)
+13. [ACKNOWLEDGEMENTS](#ACKNOWLEDGEMENTS)
+14. [LICENSES](#LICENSES)
 
-### 1. RESOURCES
+### RESOURCES
 
 Jira: https://henryo.atlassian.net/jira/software/projects/PCA/boards/3?selectedIssue=PCA-46
 
@@ -27,7 +27,7 @@ Website: [IP Address](http://35.197.238.79:5000/)
 
 GitHub: https://github.com/DesignedByQ/my-spotify
 
-### 2. BRIEF
+### BRIEF
 
 Overall objective with this project is the following:
 
@@ -67,7 +67,7 @@ The requirements of the project are as follows:
     Feature-Branch model which will subsequently be built through a CI
     server and deployed to a cloud-based virtual machine.
     
-### 3. MY APPROACH
+### MY APPROACH
 
 Music Database with Playlist Feature
 
@@ -80,13 +80,13 @@ Users can create multiple playlists.
 
 Requires two db to start
 
-### 4. MY RISK ASSESSMENT
+### MY RISK ASSESSMENT
 
 https://docs.google.com/document/d/1iqoWZ6W-6CRM-1ywy6ZZsdNVc5jbR1Qg_qtf30a_Uvs/edit?usp=sharing
 
 ![image](https://user-images.githubusercontent.com/32695213/176883529-041cad71-2835-4fd1-aab8-eab934292ddb.png)
 
-### 5. JIRA
+### JIRA
 
 I decided to use Jira for my project tracking software. By using it I was able to breakdown the requirements of the project in smaller manageable tasks. Jira has features that allowed me to deploy the MoSCoW method with my project tracking a define which tasks would also be the hardest to complete. The must-have tasks were completed first while the features that would slightly improve functionality were left to the end of the project labeled as could-have and spent most of their time in the backlog.
 
@@ -94,7 +94,7 @@ I decided to use Jira for my project tracking software. By using it I was able t
 
 ![image](https://user-images.githubusercontent.com/32695213/176886011-8e093d88-525b-4dd9-b42e-9b17e4744061.png)
 
-### 6. ENTITY RELATIONSHIP DIAGRAM
+### ENTITY RELATIONSHIP DIAGRAM
 
 My inittial thinking behind my first diagram was that each song will belong to only one album and an album can have many songs. Also a song can belong to many playlists and a playlist will have many songs. See below for proposed many-to-many ERD:
 
@@ -102,19 +102,19 @@ My inittial thinking behind my first diagram was that each song will belong to o
 
 After considering the amount of work it would take to implement the the above ERD and the limited time I had for the project I decided to go for something more simple like the two table one-to-many version shown below. With this diagram I only needed a table for songs which would serve as a main database and then a second table for playlists which songs can be added to with the additional criteria of 'playlist name'. This way the user could filter the songs in the playlist table to access a specific playlist or all playlists.
 
-### 7. TECHNOLOGY USED & CICD PIPELINE
+### TECHNOLOGY USED & CICD PIPELINE
 
 I used develpoment software such as python3 and the flask framework to build the application on a virtual machine hosted on google cloud platform. The source code was also pushed up to Github for version control as well as living on the VM. I would use Jira to create and schedule my development tasks and app features that were required to push them up to github on seperate branches as I went along. I also required the application to auto deploy and test everytime there was an alteration to the code and for this I used jenkins. The webhook feature on jenkins allowed me to setup the pipeline so everytime I pushed up to github the application would rebuild which included a full test with coverage report and deployment.
 
 ![image](https://user-images.githubusercontent.com/32695213/176937145-88004747-3942-4f0b-afb1-3f60dd9ba615.png)
 
-### 8. TESTING
+### TESTING
 
 I used pytest for my unit testing. I set out to test all the routes in my application however, I was unable to configue the integration tests. As it stands my tests pass at a rate of 72% and these tests were designed to check the end points of the of the routes and the CRUD functions run as expected. Below is a screenshot of my testing coverage report:
 
 ![image](https://user-images.githubusercontent.com/32695213/176922854-67620506-0ab7-42fc-8ab2-292c640581a7.png)
 
-### 9. HOW TO USE THE APP
+### HOW TO USE THE APP
 
 This application has been built as an MVP so has a very basic look built using HTML & Jinga2 syntax to access the back-end functions written with python.
 
@@ -138,7 +138,7 @@ This application has been built as an MVP so has a very basic look built using H
 
 ![image](https://user-images.githubusercontent.com/32695213/176927464-976f2b60-d50e-4e6b-a441-9128d25101cf.png)
 
-### 10. KNOWN ISSUES
+### KNOWN ISSUES
 
 10.1 This error message "Please select from an available playlist!!!" is constant but I would only like it to show if the user enters a playlist name that doesn't exist.
 
@@ -148,7 +148,7 @@ This application has been built as an MVP so has a very basic look built using H
 
 10.4 The DB connection to GCP has been exported using pymysql however, the gcp open shell doesn't show the tables etc.
 
-### 11. FUTURE IMPROVEMENTS
+### FUTURE IMPROVEMENTS
 
 If I had more time I would make the following improvements:
 
@@ -164,7 +164,7 @@ If I had more time I would make the following improvements:
 
 11.6 Setup user accounts for logins/password features.
 
-### 12. CONTRIBUTORS
+### CONTRIBUTORS
 
 Henry Opara
 
@@ -172,7 +172,7 @@ GitHub: https://github.com/DesignedByQ
 
 Linkedin: https://www.linkedin.com/in/henry-opara-81890a23/
 
-### 13. ACKNOWLEDGMENTS
+### ACKNOWLEDGMENTS
 
 I would like to say thanks to the following QA Training staff - Ryan Wright, Reece Elder, Adam Gray and Victoria Sacre.
 
@@ -180,7 +180,7 @@ Each of the above contributed in my development that has allowed me to build thi
 
 I would also like to give a mention to the following websites which on a numer of occasions helped me to debug and overcome coding issues w3schools.com, stackoverflow.com and qa-community.co.uk.
 
-### 14. LICENCES
+### LICENCES
 
 The MIT License (MIT)
 
