@@ -14,9 +14,9 @@ CONTENTS
 9. HOW TO USE THE APP
 10. KNOWN ISSUES
 11. FUTURE IMPROVEMENTS
-CONTRIBUTORS
-ACKNOWLEDGEMENTS
-LICENSES
+12. CONTRIBUTORS
+13. ACKNOWLEDGEMENTS
+14. LICENSES
 
 
 **1. RESOURCES **
@@ -24,6 +24,8 @@ LICENSES
 Jira: https://henryo.atlassian.net/jira/software/projects/PCA/boards/3?selectedIssue=PCA-46
 
 Website: [IP Address](http://35.197.238.79:5000/)
+
+GitHub: https://github.com/DesignedByQ/my-spotify
 
 **2. BRIEF**
 
@@ -162,7 +164,19 @@ If I had more time I would make the following improvements:
 
 11.6 Setup user accounts for logins/password features.
 
+**12. CONTRIBUTORS**
 
+Henry Opara
+
+GitHub: - https://github.com/DesignedByQ
+
+Linkedin: https://www.linkedin.com/in/henry-opara-81890a23/
+
+**13. ACKNOWLEDGMENTS**
+
+
+
+**14. LICENCES**
 
 
 
