@@ -27,7 +27,7 @@ Website: [IP Address](http://35.197.238.79:5000/)
 
 GitHub: https://github.com/DesignedByQ/my-spotify
 
-### **2. BRIEF**
+### 2. BRIEF
 
 Overall objective with this project is the following:
 
