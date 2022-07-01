@@ -6,9 +6,9 @@ CONTENTS
 1. RESOURCES
 2. BRIEF & ADDITIONAL REQUIREMENTS
 3. MY APPROACH 
-RISK ASSESSMENT
-JIRA BREAKDOWN
-ERD
+4. RISK ASSESSMENT
+5. JIRA BREAKDOWN
+6. ERD
 TECH USED & CICD PIPELINE
 TESTINGS - with screen shots of coverage
 HOW TO USE THE APP
@@ -77,8 +77,18 @@ Users can create multiple playlists.
 
 Requires two db to start
 
-**MY RISK**
+**MY RISK ASSESSMENT**
 
-![image](https://user-images.githubusercontent.com/32695213/176851535-58124133-f706-4d55-831f-8df030a8be1b.png)
+https://docs.google.com/document/d/1iqoWZ6W-6CRM-1ywy6ZZsdNVc5jbR1Qg_qtf30a_Uvs/edit?usp=sharing
 
+![image](https://user-images.githubusercontent.com/32695213/176883529-041cad71-2835-4fd1-aab8-eab934292ddb.png)
 
+**JIRA**
+
+I decided to use Jira for my project tracking software. By using it I was able to breakdown the requirements of the project in smaller manageable tasks. Jira has features that allowed me to deploy the MoSCoW method with my project tracking a define which tasks would also be the hardest to complete. The must-have tasks were completed first while the features that would slightly improve functionality were left to the end of the project labeled as could-have and spent most of their time in the backlog.
+
+![image](https://user-images.githubusercontent.com/32695213/176885385-ffac282e-67cb-4e0c-a73d-f23e78f820ca.png)
+
+![image](https://user-images.githubusercontent.com/32695213/176886011-8e093d88-525b-4dd9-b42e-9b17e4744061.png)
+
+**
