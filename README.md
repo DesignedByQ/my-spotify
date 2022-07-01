@@ -5,21 +5,19 @@ Second QA Project
 **CONTENTS**
 
 1. [RESOURCES](#RESOURCES)
-
-3. [BRIEF & ADDITIONAL REQUIREMENTS](#BRIEF & ADDITIONAL REQUIREMENTS)
-
-5. [MY APPROACH](#MY APPROACH)
-6. [RISK ASSESSMENT](#RISK ASSESSMENT)
-7. [JIRA BREAKDOWN](#JIRA BREAKDOWN)
-8. [ERD](#ERD)
-9. [TECH USED & CICD PIPELINE](#TECH USED & CICD PIPELINE)
-10. [TESTING](#TESTING)
-11. [HOW TO USE THE APP](#HOW TO USE THE APP)
-12. [KNOWN ISSUES](#KNOWN ISSUES)
-13. [FUTURE IMPROVEMENTS](#FUTURE IMPROVEMENTS)
-14. [CONTRIBUTORS](#CONTRIBUTORS)
-15. [ACKNOWLEDGEMENTS](#ACKNOWLEDGEMENTS)
-16. [LICENSES](#LICENSES)
+2. [BRIEF & ADDITIONAL REQUIREMENTS](#BRIEF & ADDITIONAL REQUIREMENTS)
+3. [MY APPROACH](#MY APPROACH)
+4. [RISK ASSESSMENT](#RISK ASSESSMENT)
+5. [JIRA BREAKDOWN](#JIRA BREAKDOWN)
+6. [ERD](#ERD)
+7. [TECH USED & CICD PIPELINE](#TECH USED & CICD PIPELINE)
+8. [TESTING](#TESTING)
+9. [HOW TO USE THE APP](#HOW TO USE THE APP)
+10. [KNOWN ISSUES](#KNOWN ISSUES)
+11. [FUTURE IMPROVEMENTS](#FUTURE IMPROVEMENTS)
+12. [CONTRIBUTORS](#CONTRIBUTORS)
+13. [ACKNOWLEDGEMENTS](#ACKNOWLEDGEMENTS)
+14. [LICENSES](#LICENSES)
 
 ### RESOURCES
 
@@ -50,7 +48,7 @@ The requirements of the project are as follows:
     project, this database needs to have at least 2 tables in it, to
     demonstrate your understanding, you are also required to model a
     relationship.
-    
+   
 3). Clear Documentation from a design phase describing the architecture
     you will use for you project as well as a detailed Risk Assessment.
 
@@ -69,7 +67,7 @@ The requirements of the project are as follows:
     Feature-Branch model which will subsequently be built through a CI
     server and deployed to a cloud-based virtual machine.
     
-### **3. MY APPROACH**
+### MY APPROACH
 
 Music Database with Playlist Feature
 
@@ -82,7 +80,7 @@ Users can create multiple playlists.
 
 Requires two db to start
 
-### **4. MY RISK ASSESSMENT**
+### 4. MY RISK ASSESSMENT
 
 https://docs.google.com/document/d/1iqoWZ6W-6CRM-1ywy6ZZsdNVc5jbR1Qg_qtf30a_Uvs/edit?usp=sharing
 
