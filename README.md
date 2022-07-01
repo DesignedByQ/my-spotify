@@ -113,3 +113,30 @@ I used pytest for my unit testing. I set out to test all the routes in my applic
 ![image](https://user-images.githubusercontent.com/32695213/176922854-67620506-0ab7-42fc-8ab2-292c640581a7.png)
 
 **HOW TO USE THE APP**
+
+This application has been built as an MVP so has a very basic look built using HTML & Jinga2 syntax to access the back-end functions written with python.
+
+Below is the front page, here the user will navigate to the main database to add songs and make available for adding them to a playlist.
+
+![image](https://user-images.githubusercontent.com/32695213/176925478-9d7eb902-e689-4bc5-a0e0-989af9ac2912.png)
+
+When you click through to the next page you can add a song of your choice and scroll down the page to see all available songs in the database.
+
+![image](https://user-images.githubusercontent.com/32695213/176925877-3ed84ad8-fda2-40c8-88aa-6b2778afd1f6.png)
+
+![image](https://user-images.githubusercontent.com/32695213/176926368-6333e70d-5fa2-4247-b7a6-0ae04e236b57.png)
+
+Now you can go to the playlist section and add any song that exists in the songs database to a playlist of your choice.
+
+![image](https://user-images.githubusercontent.com/32695213/176926642-d17889c8-1ea6-4c02-a6bf-667c7ac81ddc.png)
+
+![image](https://user-images.githubusercontent.com/32695213/176927194-8b918886-0776-44bd-9c6d-b6c081cd5ec9.png)
+
+The user can either view all playlists or filter by a specific playlist.
+
+![image](https://user-images.githubusercontent.com/32695213/176927464-976f2b60-d50e-4e6b-a441-9128d25101cf.png)
+
+
+
+
+
