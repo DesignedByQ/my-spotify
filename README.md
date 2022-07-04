@@ -173,6 +173,8 @@ If I had more time I would make the following improvements:
 
 11.6 Setup user accounts for logins/password features.
 
+11.7 I would set up my database so users will create a new table saved as a variable everytime they create a new playlist. 
+
 ### CONTRIBUTORS
 
 Henry Opara - Cloud Developer
